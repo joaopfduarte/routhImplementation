@@ -1,19 +1,36 @@
-load pkg symbolic;
+pkg load symbolic;
 
+% Simulando carregamento do vetor de coeficientes
 load('coeficienteReceiver.mat');
 qtdaS = length(coeficientes);
 
-%Criação de um vetor com todas as linhas S
-vetorDeLinhas = cell(1,qtdaS)
-for i =  1:qtdaS
-  vetorS{i} = [];
+% Inicializando vetorDeLinhas
+vetorDeLinhas = cell(1, qtdaS);
+for i = 1:qtdaS
+  vetorDeLinhas{i} = [];
 end
 
-%Preenchimento dos vetores S
-for i < length(coeficientes)
-   % Inserindo 100 na 2ª posição (índice 2)
-    vetoreDeLinhas{i} = [vetorDeLinhas{i}(1:1), 100, vetorDeLinhas{i}(2:end)];  % Insere 100 na 2ª posição
+% Preenchimento dinâmico alternado entre vetorDeLinhas{1} e vetorDeLinhas{2}
+for i = 1:qtdaS
+  if mod(i, 2) == 1
+    % Índices ímpares vão para vetorDeLinhas{1}
+    vetorDeLinhas{1} = [vetorDeLinhas{1}, coeficientes(i)];
+  else
+    % Índices pares vão para vetorDeLinhas{2}
+    vetorDeLinhas{2} = [vetorDeLinhas{2}, coeficientes(i)];
+  end
 
-    % Inserindo 200 na 3ª posição (índice 3)
-    vetorDeLinhas{i} = [vetorDeLinhas{i}(1:2), 200, vetorDeLinhas{i}(3:end)];  % Insere 200 na 3ª posição
+  if length(vetorDeLinhas{1}) > length(vetorDeLinhas{2})
+    vetorDeLinhas{2} = [vetorDeLinhas{2}, 0];
+  end
 end
+
+% Exibe o resultado
+disp("Vetores preenchidos:");
+for i = 1:length(vetorDeLinhas)
+  disp(vetorDeLinhas{i});
+end
+
+file = "coeficienteTable.mat";
+save(file, 'vetorDeLinhas');
+whos;
