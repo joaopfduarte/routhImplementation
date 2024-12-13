@@ -1,0 +1,90 @@
+# Created by Octave 9.2.0, Fri Dec 13 19:59:03 2024 GMT <unknown@Ambrus>
+# name: coeficientes
+# type: class
+# classname: sym
+# length: 6
+# name: ascii
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 24
+[3  4  2  7  8  0  2019]
+
+
+
+
+
+# name: extra
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 0
+# columns: 0
+
+
+
+
+
+# name: flat
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 34
+Matrix([[3, 4, 2, 7, 8, 0, 2019]])
+
+
+
+
+
+# name: pickle
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 109
+MutableDenseMatrix([[Integer(3), Integer(4), Integer(2), Integer(7), Integer(8), Integer(0), Integer(2019)]])
+
+
+
+
+
+# name: size
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: matrix
+# rows: 1
+# columns: 2
+ 1 7
+
+
+
+
+
+# name: unicode
+# type: cell
+# rows: 1
+# columns: 1
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 24
+[3  4  2  7  8  0  2019]
+
+
+
+
+
+
+
