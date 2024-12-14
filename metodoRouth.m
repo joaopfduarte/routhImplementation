@@ -1,21 +1,14 @@
 function [vetorDeLinhas, estabilidade] = metodoRouth(equation)
 
   syms s;
-  coeficientes = coeffs(equation, s, 'all');
-
-
-  file = "coeficienteReceiver.mat";
-  save(file, 'coeficientes');
-
+  coeficientes = double(coeffs(equation, s, 'all'));
 
   qtdaS = length(coeficientes);
   vetorDeLinhas = cell(1, qtdaS);
 
-
   for i = 1:qtdaS
     vetorDeLinhas{i} = [];
   end
-
 
   for i = 1:qtdaS
     if mod(i, 2) == 1
@@ -24,7 +17,6 @@ function [vetorDeLinhas, estabilidade] = metodoRouth(equation)
       vetorDeLinhas{2} = [vetorDeLinhas{2}, coeficientes(i)];
     end
 
-
     if length(vetorDeLinhas{1}) > length(vetorDeLinhas{2})
       vetorDeLinhas{2} = [vetorDeLinhas{2}, 0];
     elseif length(vetorDeLinhas{2}) > length(vetorDeLinhas{1})
@@ -32,12 +24,10 @@ function [vetorDeLinhas, estabilidade] = metodoRouth(equation)
     end
   end
 
-
   max_length = max(cellfun(@length, vetorDeLinhas));
   for i = 3:length(vetorDeLinhas)
     vetorDeLinhas{i} = zeros(1, max_length);
   end
-
 
   for i = 3:qtdaS
     for j = 1:(qtdaS - i + 1)
@@ -50,7 +40,6 @@ function [vetorDeLinhas, estabilidade] = metodoRouth(equation)
     end
   end
 
-
   maxCols = max(cellfun(@length, vetorDeLinhas));
   disp("Tabela de Routh:");
   for i = 1:length(vetorDeLinhas)
@@ -59,7 +48,6 @@ function [vetorDeLinhas, estabilidade] = metodoRouth(equation)
     formattedRow = [formattedRow, '|'];
     disp(formattedRow);
   end
-
 
   instavel = false;
   marginalmente_estavel = false;
@@ -72,7 +60,6 @@ function [vetorDeLinhas, estabilidade] = metodoRouth(equation)
       break;
     end
   end
-
 
   if instavel
     estabilidade = "Sistema instável";
