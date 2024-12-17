@@ -6,15 +6,15 @@ for i = 1:length(vetorDeLinhas)
 end
 
 for i = 3:qtdaS
-  for j = 1:(qtdaS - i + 1)
+  for j = 1:(length(vetorDeLinhas{1}) - i + 1)
 
     if vetorDeLinhas{i-1}(1) == 0
       vetorDeLinhas{i-1}(1) = eps;
     end
 
-    vetorDeLinhas{i}(j) = (vetorDeLinhas{i-2}(1) * vetorDeLinhas{i-1}(j+1) - ...
+    vetorDeLinhas{i}(j) = -((vetorDeLinhas{i-2}(1) * vetorDeLinhas{i-1}(j+1) - ...
     vetorDeLinhas{i-2}(j+1) * vetorDeLinhas{i-1}(1)) / ...
-    vetorDeLinhas{i-1}(1);
+    vetorDeLinhas{i-1}(1));
   end
 end
 

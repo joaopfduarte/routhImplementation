@@ -3,7 +3,7 @@ pkg load symbolic;
 syms s;
 
 % Caso 1: Sistema estável
-equationEstavel = s^4 + 5*s^3 + 10*s^2 + 10*s + 5;
+equationEstavel = s^6 + 4*s^5 + 3*s^4 + 2*s^3 + s^2 + 4*s + 4;
 disp("Caso 1: Sistema Estável");
 [vetorDeLinhas, estabilidade] = metodoRouth(equationEstavel);
 disp("Resultado:");

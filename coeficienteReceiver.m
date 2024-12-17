@@ -1,7 +1,11 @@
 pkg load symbolic;
 syms s;
 
-equation = s^8 + 6*s^7 + 15*s^6 + 24*s^5 + 35*s^4 + 40*s^3 + 30*s^2 + 15*s + 5;
+%Estável
+%equation = s^3 + 6*s^2 + 11*s + 6;
+
+%Instável
+equation = s^6 + 4*s^5 + 3*s^4 + 2*s^3 + s^2 + 4*s + 4;
 coeficientes = coeffs(equation, s,'all');
 display(coeficientes);
 

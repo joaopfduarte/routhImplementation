@@ -15,11 +15,15 @@ for i = 1:qtdaS
     vetorDeLinhas{2} = [vetorDeLinhas{2}, coeficientes(i)];
   end
 
-  if length(vetorDeLinhas{1}) > length(vetorDeLinhas{2})
-    vetorDeLinhas{2} = [vetorDeLinhas{2}, 0];
-  elseif length(vetorDeLinhas{2}) > length(vetorDeLinhas{1})
-    vetorDeLinhas{1} = [vetorDeLinhas{1}, 0];
-  end
+  ##  if length(vetorDeLinhas{1}) > length(vetorDeLinhas{2})
+  ##    vetorDeLinhas{2} = [vetorDeLinhas{2}, 0];
+  ##  elseif length(vetorDeLinhas{2}) > length(vetorDeLinhas{1})
+  ##    vetorDeLinhas{1} = [vetorDeLinhas{1}, 0];
+  ##  end
+end
+
+if length(vetorDeLinhas{1}) > length(vetorDeLinhas{2})
+  vetorDeLinhas{2}(end + 1) = 0;
 end
 
 max_length = max(cellfun(@length, vetorDeLinhas));
