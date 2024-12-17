@@ -14,12 +14,6 @@ for i = 1:qtdaS
   else
     vetorDeLinhas{2} = [vetorDeLinhas{2}, coeficientes(i)];
   end
-
-  ##  if length(vetorDeLinhas{1}) > length(vetorDeLinhas{2})
-  ##    vetorDeLinhas{2} = [vetorDeLinhas{2}, 0];
-  ##  elseif length(vetorDeLinhas{2}) > length(vetorDeLinhas{1})
-  ##    vetorDeLinhas{1} = [vetorDeLinhas{1}, 0];
-  ##  end
 end
 
 if length(vetorDeLinhas{1}) > length(vetorDeLinhas{2})

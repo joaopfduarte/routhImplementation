@@ -1,8 +1,8 @@
-# Created by Octave 9.2.0, Fri Dec 13 19:59:14 2024 GMT <unknown@Ambrus>
+# Created by Octave 8.2.0, Tue Dec 17 11:18:51 2024 GMT <unknown@C7-LAB01-TM-001>
 # name: vetorDeLinhas
 # type: cell
 # rows: 1
-# columns: 7
+# columns: 4
 # name: <cell-element>
 # type: class
 # classname: sym
@@ -14,8 +14,8 @@
 # name: <cell-element>
 # type: sq_string
 # elements: 1
-# length: 24
-[3  0  2  0  8  0  2019]
+# length: 7
+[1  11]
 
 
 
@@ -41,8 +41,8 @@
 # name: <cell-element>
 # type: sq_string
 # elements: 1
-# length: 34
-Matrix([[3, 0, 2, 0, 8, 0, 2019]])
+# length: 17
+Matrix([[1, 11]])
 
 
 
@@ -55,8 +55,8 @@ Matrix([[3, 0, 2, 0, 8, 0, 2019]])
 # name: <cell-element>
 # type: sq_string
 # elements: 1
-# length: 109
-MutableDenseMatrix([[Integer(3), Integer(0), Integer(2), Integer(0), Integer(8), Integer(0), Integer(2019)]])
+# length: 47
+MutableDenseMatrix([[Integer(1), Integer(11)]])
 
 
 
@@ -70,7 +70,7 @@ MutableDenseMatrix([[Integer(3), Integer(0), Integer(2), Integer(0), Integer(8),
 # type: matrix
 # rows: 1
 # columns: 2
- 1 7
+ 1 2
 
 
 
@@ -83,8 +83,8 @@ MutableDenseMatrix([[Integer(3), Integer(0), Integer(2), Integer(0), Integer(8),
 # name: <cell-element>
 # type: sq_string
 # elements: 1
-# length: 24
-[3  0  2  0  8  0  2019]
+# length: 7
+[1  11]
 
 
 
@@ -104,8 +104,8 @@ MutableDenseMatrix([[Integer(3), Integer(0), Integer(2), Integer(0), Integer(8),
 # name: <cell-element>
 # type: sq_string
 # elements: 1
-# length: 21
-[0  4  0  7  0  0  0]
+# length: 6
+[6  6]
 
 
 
@@ -131,8 +131,8 @@ MutableDenseMatrix([[Integer(3), Integer(0), Integer(2), Integer(0), Integer(8),
 # name: <cell-element>
 # type: sq_string
 # elements: 1
-# length: 31
-Matrix([[0, 4, 0, 7, 0, 0, 0]])
+# length: 16
+Matrix([[6, 6]])
 
 
 
@@ -145,8 +145,8 @@ Matrix([[0, 4, 0, 7, 0, 0, 0]])
 # name: <cell-element>
 # type: sq_string
 # elements: 1
-# length: 106
-MutableDenseMatrix([[Integer(0), Integer(4), Integer(0), Integer(7), Integer(0), Integer(0), Integer(0)]])
+# length: 46
+MutableDenseMatrix([[Integer(6), Integer(6)]])
 
 
 
@@ -160,7 +160,7 @@ MutableDenseMatrix([[Integer(0), Integer(4), Integer(0), Integer(7), Integer(0),
 # type: matrix
 # rows: 1
 # columns: 2
- 1 7
+ 1 2
 
 
 
@@ -173,8 +173,8 @@ MutableDenseMatrix([[Integer(0), Integer(4), Integer(0), Integer(7), Integer(0),
 # name: <cell-element>
 # type: sq_string
 # elements: 1
-# length: 21
-[0  4  0  7  0  0  0]
+# length: 6
+[6  6]
 
 
 
@@ -186,40 +186,16 @@ MutableDenseMatrix([[Integer(0), Integer(4), Integer(0), Integer(7), Integer(0),
 # name: <cell-element>
 # type: matrix
 # rows: 1
-# columns: 7
- 0 0 0 0 0 0 0
+# columns: 2
+ 0 0
 
 
 
 # name: <cell-element>
 # type: matrix
 # rows: 1
-# columns: 7
- 0 0 0 0 0 0 0
-
-
-
-# name: <cell-element>
-# type: matrix
-# rows: 1
-# columns: 7
- 0 0 0 0 0 0 0
-
-
-
-# name: <cell-element>
-# type: matrix
-# rows: 1
-# columns: 7
- 0 0 0 0 0 0 0
-
-
-
-# name: <cell-element>
-# type: matrix
-# rows: 1
-# columns: 7
- 0 0 0 0 0 0 0
+# columns: 2
+ 0 0
 
 
 
@@ -227,6 +203,6 @@ MutableDenseMatrix([[Integer(0), Integer(4), Integer(0), Integer(7), Integer(0),
 
 # name: qtdaS
 # type: scalar
-7
+4
 
 
